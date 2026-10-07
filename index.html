@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdelrahman Emad | Machine Learning and NLP Engineer</title>
+<meta name="description" content="Portfolio of Abdelrahman Emad, a Computer Science student specializing in Artificial Intelligence, Machine Learning and NLP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#14202b; --muted:#56656f;
+  --accent:#0f6b6b; --accent-ink:#ffffff; --line:#d5dce1;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f171d; --surface:#17222a; --ink:#e8eef2; --muted:#9aabb6; --accent:#4fb3b0; --accent-ink:#0f171d; --line:#2a3944;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem;gap:1rem;flex-wrap:wrap}
+.brand{font:600 1.1rem "Source Serif 4",serif;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.25rem;color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--accent)}
+.hero{padding:4.5rem 0 4rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+.portrait{width:15rem;height:15rem;object-fit:cover;object-position:center 15%;border-radius:50%;border:4px solid var(--surface);box-shadow:0 0 0 3px var(--accent);display:block}
+h1{font:600 clamp(2.3rem,6vw,4rem)/1.1 "Source Serif 4",serif;margin:0 0 1.25rem;letter-spacing:-.02em}
+.role{font:600 1.35rem "Source Serif 4",serif;color:var(--accent);margin:0 0 1rem}
+.hero p.lead{max-width:38rem;font-size:1.25rem;color:var(--muted);margin:0 0 2rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:4px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{opacity:.88}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+.lab input{width:100%;max-width:42rem;font:inherit;padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
+.lab input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem;min-height:3.5rem}
+.chip{background:var(--surface);border:1.5px solid var(--accent);border-radius:6px;padding:.35rem .7rem;line-height:1.2;animation:pop .25s ease-out}
+.chip small{display:block;color:var(--muted);font-size:.75rem;margin-top:.15rem}
+.note{color:var(--muted);font-size:.95rem;max-width:42rem;margin-top:1rem}
+@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.chip{animation:none}}
+h2{font:600 1.9rem/1.2 "Source Serif 4",serif;margin:0 0 1.5rem}
+.about p{max-width:42rem;margin:0 0 1rem}
+.projects{display:grid;gap:1.25rem}
+.project{background:var(--surface);border-left:4px solid var(--accent);padding:1.5rem 1.75rem;border-radius:0 6px 6px 0}
+.project h3{font:600 1.35rem "Source Serif 4",serif;margin:0 0 .5rem}
+.project p{margin:0 0 .75rem;max-width:44rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
+.tags li{font-size:.9rem;padding:.2rem .7rem;border:1px solid var(--line);border-radius:99px;color:var(--muted)}
+.project a.more{font-weight:600}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.skills h3{font:600 1.1rem "Source Serif 4",serif;margin:0 0 .6rem}
+.skills ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+.edu p{margin:0 0 .35rem}
+.contact p{max-width:38rem}
+.contact ul{list-style:none;padding:0;margin:1rem 0 0}
+.contact li{margin-bottom:.5rem}
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:2rem;padding:3rem 0}.portrait{width:10.5rem;height:10.5rem;order:-1}}
+@media (max-width:600px){nav a{margin:0 1rem 0 0}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Abdelrahman Emad</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+      <h1>Machine Learning and NLP Engineer</h1>
+      <p class="role">Final-year Computer Science student, open to internships</p>
+      <p class="lead">I am a fourth-year (senior) Computer Science student at AASTMT in Cairo. I train models that turn raw data and text into useful predictions: estimating car prices, preparing text for language models, and testing which approach works best. I am looking for an internship where I can do this on real problems, with a team.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      </div>
+      <img class="portrait" alt="Portrait of Abdelrahman Emad" src="data:image/jpeg;base64,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5sf71Y/Vzo+tHW+INWR3bbJu+X5ayrjW5JoEieRtqfd21iySO7bmbdTBWkaXKYzrykydleQPLuGQ3PPP5VGrsrbvu/Sm5zSqjOwVV5rUyF68L1rc0+yWyT7VcYWQDcq+lTaDpqxxG6nj3HbuX/Zql4hvGknMK9F681i588uVG8aahG8jNvJmnuGlb+JqYp2fdX86ZQOtbROaQUUUUAFFFFABRRRQAu6koooAKKVlwo/2qSgAooooAKlt5nhlDo21lNRUUBGXKd9oesQX9v5Uqrv27WTd96qeteG45onubNtu37y1yMTtEwdCysO4rptE8TmICK7Df74rnlTlCXNE7I1YzVpnP3Vjc23+uiaq2PvV6b5mnalErt5cn8OUrMuPB8Em5oZlXd2P8NONdfaFLDP7JwlFdPdeEbuFvldWX+9mqreGr4Njb8vrWntoGXsJmF+NFbUWg3Pzb/LXb6utWW0q1gCtJKv0Vd1TKvEccNORiWtrLO6qg69627K0gspN0+3cB/e+akfUbO02rbQr8rZ/yayb69luZXZsqrfw7qXvTNPcpepf1bVvNTyrddq1jM2aaKK0jFR2MKlRzeoUUUVRmFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBNbzywPuildD/ALJrbs/FepQKEfZKv+0vNc9RUunGXxGkKs4fCzsv+ExikX97ZHd/stVe88TxO26Cz2r/ALTVytFZ/V6Zr9amalxrV1IW27UDf3apT3U8x/eys31NQUfhWihFbGUqs5bsKKKKozCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKMfLmgAooooAKKKKACiiigAooooAKKKKACiiigAoox8uaFoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==">
+    </div>
+
+    <section id="lab" class="lab">
+      <h2>How a language model reads a sentence</h2>
+      <p style="max-width:42rem">Before a model can work with text, it splits the text into small pieces called tokens and turns each piece into a number. Type anything below, in English or Arabic, and watch it happen.</p>
+      <input id="tin" type="text" value="Machines learn to read language." aria-label="Type a sentence to tokenize" autocomplete="off">
+      <div id="tout" class="chips" aria-live="polite"></div>
+      <p class="note">This is a simplified version. Real models use subword tokenizers, which can split one word into several tokens.</p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About me</h2>
+      <p>I am a senior undergraduate student at the Arab Academy for Science, Technology and Maritime Transport. My work centers on Python and PyTorch, and I enjoy turning a real problem into a model that can be trained, tested and improved.</p>
+      <p>My main interests are machine learning, deep learning, NLP and generative AI. I am looking for internships and projects where I can apply what I have learned, work with a team, and keep growing.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <article class="project">
+          <h3>AutoValuate Pro: car price prediction</h3>
+          <p>A university project that predicts used car prices from a Kaggle dataset. We trained and compared five models: Random Forest, Gradient Boosting, Decision Tree, KNN and an Artificial Neural Network. The team also delivered an interactive website, a presentation, an A1 poster and a roll-up banner.</p>
+          <ul class="tags"><li>Python</li><li>Machine Learning</li><li>ANN</li><li>Model comparison</li></ul>
+          <p style="margin-top:.9rem"><a class="more" href="https://github.com/Abdelrahman-Emad2">View on GitHub</a></p>
+        </article>
+
+        <article class="project">
+          <h3>NLP learning projects</h3>
+          <p>Hands-on practice with text preprocessing and experiments with language models, built to understand how text becomes something a model can learn from.</p>
+          <ul class="tags"><li>NLP</li><li>PyTorch</li><li>Text preprocessing</li></ul>
+          <p style="margin-top:.9rem"><a class="more" href="https://github.com/Abdelrahman-Emad2">View on GitHub</a></p>
+        </article>
+
+        <article class="project">
+          <h3>Machine learning practice</h3>
+          <p>Small models and experiments focused on the full training workflow: preparing data, training, evaluating results and improving them.</p>
+          <ul class="tags"><li>Python</li><li>Model training</li><li>Evaluation</li></ul>
+          <p style="margin-top:.9rem"><a class="more" href="https://github.com/Abdelrahman-Emad2">View on GitHub</a></p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Programming</h3>
+          <ul><li>Python</li><li>Object Oriented Programming</li><li>Data analysis</li></ul>
+        </div>
+        <div>
+          <h3>AI and machine learning</h3>
+          <ul><li>PyTorch</li><li>Machine Learning</li><li>Deep Learning fundamentals</li><li>Natural Language Processing</li><li>Model training and evaluation</li></ul>
+        </div>
+        <div>
+          <h3>Working style</h3>
+          <ul><li>Analytical problem solving</li><li>Fast, independent learning</li><li>Team collaboration</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="edu">
+      <h2>Education and languages</h2>
+      <p><strong>Arab Academy for Science, Technology and Maritime Transport</strong></p>
+      <p>Bachelor of Computer Science, Artificial Intelligence track (in progress)</p>
+      <p style="margin-top:1rem">Languages: Arabic (native), English (good working proficiency)</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I am open to internships and AI or NLP projects. The easiest way to reach me is by email.</p>
+      <ul>
+        <li>Email: <a href="mailto:abdelrahmanemad20005@yahoo.com">abdelrahmanemad20005@yahoo.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/abdelrahman-emad-611566265">abdelrahman-emad-611566265</a></li>
+        <li>GitHub: <a href="https://github.com/Abdelrahman-Emad2">github.com/Abdelrahman-Emad2</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Abdelrahman Emad, Cairo, Egypt</div>
+</footer>
+
+<script>
+(function(){
+  var inp=document.getElementById('tin'),out=document.getElementById('tout');
+  function id(s){var x=0;for(var i=0;i<s.length;i++){x=(x*31+s.charCodeAt(i))%50000}return x}
+  function render(){
+    var t=inp.value.match(/[\p{L}\p{N}]+|[^\s\p{L}\p{N}]/gu)||[];
+    out.innerHTML='';
+    t.slice(0,40).forEach(function(w){
+      var c=document.createElement('div');c.className='chip';
+      c.appendChild(document.createTextNode(w));
+      var s=document.createElement('small');s.textContent=id(w);c.appendChild(s);
+      out.appendChild(c);
+    });
+  }
+  inp.addEventListener('input',render);render();
+})();
+</script>
+</body>
+</html>
